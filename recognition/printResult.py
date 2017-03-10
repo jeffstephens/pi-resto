@@ -10,4 +10,4 @@ if resultJson["status"]["msg"] != "Success":
 songName = resultJson["metadata"]["music"][0]["title"]
 songArtist = resultJson["metadata"]["music"][0]["artists"][0]["name"]
 
-print "Heard '%s' by %s" % (songName, songArtist)
+print "'%s' - %s" % (songName, songArtist)
