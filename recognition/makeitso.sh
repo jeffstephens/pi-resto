@@ -9,7 +9,13 @@ if [ $argc == 0 ]; then
 elif [ $argc == 1 ]; then
 	# use existing audio sample
 	echo "Using existing audio sample..."
-	audioSample=$1
+
+	if [ -f $1 ]; then
+		audioSample=$1
+	else
+		echo "File ${1} doesn't exist."
+		exit 2
+	fi
 else
 	echo "Usage: ${0} [pathToAudioSample]"
 	exit 1
@@ -22,6 +28,6 @@ audioInfo=$(python identify-audio.py $audioSample)
 # publish results to Last.fm and Twitter
 echo "Publishing results..."
 echo $audioInfo | python printResult.py
+echo $audioInfo | python printResult.py | python scrollMessage.py
 echo $audioInfo | python scrobbleTrack.py
-echo $audioInfo | python tweetTrack.py
 
