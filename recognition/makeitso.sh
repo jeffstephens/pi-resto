@@ -25,9 +25,26 @@ fi
 echo "Identifying audio sample..."
 audioInfo=$(python identify-audio.py $audioSample)
 
-# publish results to Last.fm and Twitter
+# display current track name and artist on Sense HAT
 echo "Publishing results..."
 echo $audioInfo | python printResult.py
 echo $audioInfo | python printResult.py | python scrollMessage.py
-echo $audioInfo | python scrobbleTrack.py
+
+# scrobble the track if it's different than the last one we scrobbled
+scrobbleHash=$(echo $audioInfo | python printResult.py | md5sum)
+echo $scrobbleHash > tempHash.txt
+scrobbleHashFile="last-scrobble.txt"
+
+if [ ! -f $scrobbleHashFile ]; then
+	touch $scrobbleHashFile
+fi
+
+if diff tempHash.txt $scrobbleHashFile >/dev/null; then
+	echo "Not scrobbling a duplicate"
+else
+	echo "Scrobbling track..."
+	source ../setup/lastfm_creds.sh
+	echo $audioInfo | python scrobbleTrack.py
+	echo $scrobbleHash > $scrobbleHashFile
+fi
 
