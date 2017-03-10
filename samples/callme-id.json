@@ -1,2 +1,163 @@
-{"status":{"msg":"Success","code":0,"version":"1.0"},"metadata":{"music":[{"external_ids":{"isrc":"CAB391100615","upc":"602527990453"},"play_offset_ms":66660,"external_metadata":{"deezer":{"album":{"id":1561025},"artists":[{"id":1002521}],"genres":[{"id":132}],"track":{"id":16670786}},"itunes":{"album":{"id":606577235},"artists":[{"id":284363062}],"track":{"id":606577239}},"youtube":{"vid":"fWNaR-rxAic"},"spotify":{"album":{"id":"438zhJOfWArvdDtXLs6SaS"},"artists":[{"id":"6sFIWsNpZYqfjUpaCgueju"}],"track":{"id":"3kPUeQSXIjVTbFJAKtRHDP"}}},"release_date":"2012-01-01","title":"Call Me Maybe","genres":[{"name":"Pop"}],"label":"School Boy\/Interscope Records","duration_ms":193400,"album":{"name":"Call Me Maybe"},"acrid":"979d44792876be61f00fc100af9e0e2f","result_from":3,"artists":[{"name":"Carly Rae Jepsen"}]},{"external_ids":{"isrc":"CAB391100615","upc":"602527990453"},"play_offset_ms":66680,"external_metadata":{"deezer":{"album":{"id":1561025},"artists":[{"id":1002521}],"genres":[{"id":132}],"track":{"id":16670786}},"itunes":{"album":{"id":606577235},"artists":[{"id":284363062}],"track":{"id":606577239}},"youtube":{"vid":"fWNaR-rxAic"},"spotify":{"album":{"id":"438zhJOfWArvdDtXLs6SaS"},"artists":[{"id":"6sFIWsNpZYqfjUpaCgueju"}],"track":{"id":"3kPUeQSXIjVTbFJAKtRHDP"}}},"release_date":"2012-01-01","title":"Call Me Maybe","genres":[{"name":"Pop"}],"label":"School Boy\/Interscope Records","duration_ms":193400,"album":{"name":"Call Me Maybe"},"acrid":"979d44792876be61f00fc100af9e0e2f","result_from":3,"artists":[{"name":"Carly Rae Jepsen"}]}],"timestamp_utc":"2017-03-10 21:09:16"},"result_type":3}
-
+{
+    "status": {
+        "msg": "Success",
+        "code": 0,
+        "version": "1.0"
+    },
+    "metadata": {
+        "music": [
+            {
+                "external_ids": {
+                    "isrc": "CAB391100615",
+                    "upc": "602527990453"
+                },
+                "play_offset_ms": 66660,
+                "external_metadata": {
+                    "deezer": {
+                        "album": {
+                            "id": 1561025
+                        },
+                        "artists": [
+                            {
+                                "id": 1002521
+                            }
+                        ],
+                        "genres": [
+                            {
+                                "id": 132
+                            }
+                        ],
+                        "track": {
+                            "id": 16670786
+                        }
+                    },
+                    "itunes": {
+                        "album": {
+                            "id": 606577235
+                        },
+                        "artists": [
+                            {
+                                "id": 284363062
+                            }
+                        ],
+                        "track": {
+                            "id": 606577239
+                        }
+                    },
+                    "youtube": {
+                        "vid": "fWNaR-rxAic"
+                    },
+                    "spotify": {
+                        "album": {
+                            "id": "438zhJOfWArvdDtXLs6SaS"
+                        },
+                        "artists": [
+                            {
+                                "id": "6sFIWsNpZYqfjUpaCgueju"
+                            }
+                        ],
+                        "track": {
+                            "id": "3kPUeQSXIjVTbFJAKtRHDP"
+                        }
+                    }
+                },
+                "release_date": "2012-01-01",
+                "title": "Call Me Maybe",
+                "genres": [
+                    {
+                        "name": "Pop"
+                    }
+                ],
+                "label": "School Boy/Interscope Records",
+                "duration_ms": 193400,
+                "album": {
+                    "name": "Call Me Maybe"
+                },
+                "acrid": "979d44792876be61f00fc100af9e0e2f",
+                "result_from": 3,
+                "artists": [
+                    {
+                        "name": "Carly Rae Jepsen"
+                    }
+                ]
+            },
+            {
+                "external_ids": {
+                    "isrc": "CAB391100615",
+                    "upc": "602527990453"
+                },
+                "play_offset_ms": 66680,
+                "external_metadata": {
+                    "deezer": {
+                        "album": {
+                            "id": 1561025
+                        },
+                        "artists": [
+                            {
+                                "id": 1002521
+                            }
+                        ],
+                        "genres": [
+                            {
+                                "id": 132
+                            }
+                        ],
+                        "track": {
+                            "id": 16670786
+                        }
+                    },
+                    "itunes": {
+                        "album": {
+                            "id": 606577235
+                        },
+                        "artists": [
+                            {
+                                "id": 284363062
+                            }
+                        ],
+                        "track": {
+                            "id": 606577239
+                        }
+                    },
+                    "youtube": {
+                        "vid": "fWNaR-rxAic"
+                    },
+                    "spotify": {
+                        "album": {
+                            "id": "438zhJOfWArvdDtXLs6SaS"
+                        },
+                        "artists": [
+                            {
+                                "id": "6sFIWsNpZYqfjUpaCgueju"
+                            }
+                        ],
+                        "track": {
+                            "id": "3kPUeQSXIjVTbFJAKtRHDP"
+                        }
+                    }
+                },
+                "release_date": "2012-01-01",
+                "title": "Call Me Maybe",
+                "genres": [
+                    {
+                        "name": "Pop"
+                    }
+                ],
+                "label": "School Boy/Interscope Records",
+                "duration_ms": 193400,
+                "album": {
+                    "name": "Call Me Maybe"
+                },
+                "acrid": "979d44792876be61f00fc100af9e0e2f",
+                "result_from": 3,
+                "artists": [
+                    {
+                        "name": "Carly Rae Jepsen"
+                    }
+                ]
+            }
+        ],
+        "timestamp_utc": "2017-03-10 21:09:16"
+    },
+    "result_type": 3
+}
