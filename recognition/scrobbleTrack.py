@@ -14,6 +14,22 @@ username = os.environ["LASTFM_USERNAME"]
 password = os.environ["LASTFM_PASSWORD"]
 passwordHash = pylast.md5(password)
 
+if not apiKey:
+	print "No Last.fm API Key was found."
+	sys.exit(3)
+
+if not apiSecret:
+	print "No Last.fm API Secret was found."
+	sys.exit(3)
+
+if not username:
+	print "No Last.fm username was found."
+	sys.exit(3)
+
+if not password:
+	print "No Last.fm password was found."
+	sys.exit(3)
+
 # load song details from JSON object
 songName = resultJson["metadata"]["music"][0]["title"]
 songArtist = resultJson["metadata"]["music"][0]["artists"][0]["name"]
