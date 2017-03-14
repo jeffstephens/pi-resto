@@ -28,7 +28,16 @@ audioInfo=$(python identify-audio.py $audioSample)
 # display current track name and artist on Sense HAT
 echo "Publishing results..."
 echo $audioInfo | python printResult.py
-echo $audioInfo | python printResult.py | python scrollMessage.py
+
+recognitionResult=$?
+if [ $recognitionResult -ne 0 ]; then
+	echo "Failed to recognize song."
+	echo $audioInfo | python printResult.py | python scrollError.py
+	exit 2
+else
+	echo $audioInfo | python printResult.py | python scrollMessage.py
+fi
+
 
 # scrobble the track if it's different than the last one we scrobbled
 scrobbleHash=$(echo $audioInfo | python printResult.py | md5sum)
