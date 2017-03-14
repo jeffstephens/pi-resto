@@ -1,6 +1,9 @@
 # Pi-resto!
 
-My ReadyTalk Pi Day 2017 Project: Pi-resto identifies the song that's playing and scrobbles it to Last.fm.
+My ReadyTalk Pi Day 2017 Project: Pi-resto identifies the song that's playing and scrobbles it to
+[Last.fm](https://www.last.fm/).
+
+![Scrolling Message](https://github.com/jeffstephens/pi-resto/raw/master/samples/scroll-example.gif)
 
 ## Components
 
@@ -43,8 +46,6 @@ Scrobbling is handled by `recognition/scrobbleTrack.py`.
 
 The artist and track name (or an error message) are scrolled across the 8x8 LED array of the
 [Sense HAT](https://www.raspberrypi.org/products/sense-hat/) using the provided `SenseHat` library.
-
-![Scrolling Message](https://github.com/jeffstephens/pi-resto/raw/master/samples/scroll-example.gif)
 
 ## Sample Files
 
