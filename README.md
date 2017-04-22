@@ -3,6 +3,8 @@
 My ReadyTalk Pi Day 2017 Project: Pi-resto identifies the song that's playing and scrobbles it to
 [Last.fm](https://www.last.fm/).
 
+Check out my [blog post about the project](https://blog.jeffastephens.com/2017/04/22/pi-resto-pi-day-2017.html).
+
 ![Scrolling Message](https://github.com/jeffstephens/pi-resto/raw/master/samples/scroll-example.gif)
 
 ## Components
